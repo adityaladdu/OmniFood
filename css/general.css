@@ -15,6 +15,7 @@ Bold : 700
 Default:1
 small : 1.05
 Medium : 1.2
+Large : 1.8
 paragraph-default : 1.6
 
 
@@ -68,6 +69,7 @@ MEDIUM : 11px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage od users browser font-size setting */
 }
@@ -77,6 +79,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /* -------------------- */
@@ -250,6 +255,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
