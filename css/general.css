@@ -70,6 +70,8 @@ MEDIUM : 11px
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage od users browser font-size setting */
 }

@@ -122,8 +122,10 @@ insted, 1rem(root) = 1em(current = 16px */
     margin-top: 1.2rem;
   }
 
+  /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 
   .main-nav {
@@ -132,7 +134,7 @@ insted, 1rem(root) = 1em(current = 16px */
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.97);
 
     transform: translateX(100%);
 
@@ -163,9 +165,17 @@ insted, 1rem(root) = 1em(current = 16px */
   }
 
   .icon-mobile-nav[name="close-outline"] {
-    display: block;
+    display: none;
   }
   .icon-mobile-nav[name="menu-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
 
