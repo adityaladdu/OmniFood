@@ -1,4 +1,4 @@
-console.log("hie");
+console.log("helow world!");
 
 // const myName = "Aditya";
 // const h1 = document.querySelector(".heading-primary");
